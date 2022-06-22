@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 650px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        /* Efeito zebrado */ 
+
+        tbody > tr:nth-child(odd) {  /* Linhas Ímpares*/ 
+            background-color: rgba(173, 216, 230, 0.452);
+        }
+
+        tbody > tr:nth-child(even) { /* Linhas Pares */
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION (TÍTULO)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH        
+     -->
+    <table>
+        <caption>Os 20 melhores países para se viver em 2020.</caption>
+         <thead>
+            <th scope="col">Posição</th>
+            <th scope="col">País</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 200px;">Segurança (ranking no Global Peace Index)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Canadá</td>
+                <td>37.1 milhões</td>
+                <td>Alta (6º lugar)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dinamarca</td>
+                <td>5.8 milhões</td>
+                <td>Alta (5º lugar)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Suécia</td>
+                <td>10.2 milhões</td>
+                <td>Alta (18º lugar)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Noruega</td>
+                <td>5.3 milhões</td>
+                <td> Alta (19º lugar)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Austrália</td>
+                <td>25.0 milhões</td>
+                <td>Alta (13º lugar)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Holanda</td>
+                <td>17.2 milhões</td>
+                <td>Alta (16º lugar)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Suiça</td>
+                <td>8.5 milhões</td>
+                <td>Alta (11º lugar)</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Nova Zelândia</td>
+                <td>4.9 milhões</td>
+                <td>Alta (2º lugar)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Finlândia</td>
+                <td>5.5 milhões</td>
+                <td>Alta (14º lugar)</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Alemanha</td>
+                <td>82.9 milhões</td>
+                <td>Alta (21º lugar)</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Áustria</td>
+                <td>8.8 milhões</td>
+                <td>Alta (4º lugar)</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Reino Unido</td>
+                <td>66.5 milhões</td>
+                <td>Alta (44º lugar)</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Luxemburgo</td>
+                <td>607.6 mil</td>
+                <td>Alta (sem dados)</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Portugal</td>
+                <td>10.3 milhões</td>
+                <td>Alta (3º lugar)</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Espanha</td>
+                <td>46.7 milhões</td>
+                <td>Alta (31º lugar)</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Itália</td>
+                <td>60.4 milhões</td>
+                <td>Alta (38º lugar)</td>
+
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>República Tcheca</td>
+                <td>10.6 milhões</td>
+                <td>Alta (10º lugar) </td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Estados Unidos</td>
+                <td>327.2 milhões</td>
+                <td>Baixa (123º lugar) </td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>França</td>
+                <td>67.0 milhões</td>
+                <td>Média (59º lugar)</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Japão</td>
+                <td>126.5 milhões</td>
+                <td>Alta (9º lugar no</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
