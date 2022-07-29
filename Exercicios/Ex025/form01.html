@@ -13,10 +13,18 @@
 </head>
 <body>
     <h1>Primeiro Formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> <!-- A tag 'label' relaciona a caixa ao elemento 'input' -->
+            <input type="text" name="nome" id="inome"> <!-- No campo de entrada 'input' o HTML e Php o 'name' é mais utilizado, para o JavaScript o 'id' é mais utilizado. -->
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão enviar -->
+        </p>
     </form>
 </body>
 </html>
