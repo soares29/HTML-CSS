@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste com formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- required= campo obrigatorio
+             placeholder= sugestão na caixa -->
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required placeholder="Nome">
+    </p>
+        <!-- minlength= mínimo de caracteres
+             maxlength= máximo de caracteres -->
+    <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Senha">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
