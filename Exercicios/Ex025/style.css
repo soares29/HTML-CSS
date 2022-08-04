@@ -1,0 +1,21 @@
+@charset "UTF8";
+
+.enviar {
+    font-size: 1.2em;
+    background-color: #157347;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px;
+    text-decoration: none;
+}
+.limpar {
+    font-size: 1.2em;
+    background-color: gray;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px;
+}
